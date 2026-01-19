@@ -1,0 +1,490 @@
+/* =====================================================
+   STRAND ELEKTRO - Responsive Stylesheet
+   Mobile-first responsive design
+   ===================================================== */
+
+/* =====================================================
+   TABLET (768px and up)
+   ===================================================== */
+
+@media (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    /* Navigation */
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .header-contact {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    /* Intro */
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Why Grid */
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hytte Section */
+    .hytte-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+    }
+
+    .hytte-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Detail */
+    .service-detail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About */
+    .about-intro {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+    .about-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Areas */
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hytte-areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+
+    /* CTA Buttons */
+    .cta-buttons {
+        flex-direction: row;
+    }
+}
+
+/* =====================================================
+   DESKTOP (1024px and up)
+   ===================================================== */
+
+@media (min-width: 1024px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--spacing-xxl) 0;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Why Grid */
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    /* Service Detail */
+    .service-detail {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* About Values */
+    .about-values {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Areas */
+    .areas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hytte-areas-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Quick Contact */
+    .quick-contact-inner {
+        gap: var(--spacing-xl);
+    }
+}
+
+/* =====================================================
+   LARGE DESKTOP (1200px and up)
+   ===================================================== */
+
+@media (min-width: 1200px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation */
+    .nav-list {
+        gap: var(--spacing-xl);
+    }
+
+    /* Service Cards */
+    .service-card {
+        padding: var(--spacing-xl);
+    }
+}
+
+/* =====================================================
+   EXTRA LARGE (1400px and up)
+   ===================================================== */
+
+@media (min-width: 1400px) {
+    :root {
+        --max-width: 1320px;
+    }
+}
+
+/* =====================================================
+   MOBILE LANDSCAPE (480px - 767px)
+   ===================================================== */
+
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hero buttons */
+    .hero-buttons {
+        flex-direction: row;
+    }
+
+    /* Area badges */
+    .area-badges {
+        justify-content: flex-start;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE (max 374px)
+   ===================================================== */
+
+@media (max-width: 374px) {
+    html {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* =====================================================
+   HIGH DPI / RETINA
+   ===================================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    /* Sharper borders on high DPI */
+    .service-card,
+    .contact-form-wrapper,
+    .contact-info {
+        border: 0.5px solid var(--color-border);
+    }
+}
+
+/* =====================================================
+   REDUCED MOTION
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .scroll-top {
+        transition: none;
+    }
+}
+
+/* =====================================================
+   DARK MODE (Optional - respects system preference)
+   ===================================================== */
+
+@media (prefers-color-scheme: dark) {
+    /*
+    Uncomment to enable dark mode support:
+
+    :root {
+        --color-background: #1a1a1a;
+        --color-light: #2d2d2d;
+        --color-text: #e0e0e0;
+        --color-text-light: #a0a0a0;
+        --color-border: #404040;
+    }
+
+    body {
+        background-color: var(--color-background);
+    }
+
+    .header {
+        background-color: var(--color-light);
+    }
+
+    .service-card,
+    .contact-form-wrapper,
+    .contact-info {
+        background-color: var(--color-light);
+    }
+    */
+}
+
+/* =====================================================
+   PRINT STYLES
+   ===================================================== */
+
+@media print {
+    /* Hide non-essential elements */
+    .header,
+    .footer,
+    .scroll-top,
+    .mobile-nav,
+    .btn,
+    .contact-form-wrapper {
+        display: none !important;
+    }
+
+    /* Reset colors */
+    body {
+        background: white;
+        color: black;
+    }
+
+    /* Remove shadows and backgrounds */
+    .service-card,
+    .contact-info,
+    .area-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+
+    /* Show URLs */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    /* Page breaks */
+    h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .service-card,
+    .area-card {
+        page-break-inside: avoid;
+    }
+}
+
+/* =====================================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ===================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .btn {
+        min-height: 48px;
+    }
+
+    .nav-link {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .mobile-nav-link {
+        padding: var(--spacing-md) 0;
+    }
+
+    /* Remove hover effects */
+    .service-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    /* Add active states instead */
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .service-card:active {
+        transform: scale(0.99);
+    }
+}
+
+/* =====================================================
+   LANDSCAPE ORIENTATION ADJUSTMENTS
+   ===================================================== */
+
+@media (orientation: landscape) and (max-height: 500px) {
+    /* Reduce hero height on short landscape screens */
+    .hero {
+        min-height: auto;
+        padding-top: calc(72px + var(--spacing-lg));
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .page-header {
+        padding-top: calc(72px + var(--spacing-md));
+        padding-bottom: var(--spacing-md);
+    }
+}
+
+/* =====================================================
+   SPECIFIC COMPONENT ADJUSTMENTS
+   ===================================================== */
+
+/* Contact form on mobile */
+@media (max-width: 767px) {
+    .contact-grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-info {
+        order: 2;
+    }
+
+    .contact-form-wrapper {
+        order: 1;
+    }
+}
+
+/* Service detail cards on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .service-detail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-detail > *:last-child:nth-child(odd) {
+        grid-column: span 2;
+    }
+}
+
+/* Footer adjustments for tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+        max-width: none;
+        margin-bottom: var(--spacing-md);
+    }
+}
